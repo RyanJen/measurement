@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>你算個什麼東西？</title>
+    <link rel="shortcut icon" href="src/icon/measuring-tape-icon-illustration-for-graphic-and-web-design-free-vector.jpg"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="dist/style.min.css"/>
+  </head>
+  <body>
+    <div class="container" id="app">
+      <section class="kv w-640" id="imageContainer"><img src="src/pics/default.jpg"/></section>
+      <section class="form w-640">
+        <div class="text-center">
+          <h1>你算個什麼東西？</h1>
+        </div>
+        <div class="two-col">
+          <div class="col">
+            <div class="form-group">
+              <label for="name">腰圍</label>
+              <div class="prepend">
+                <input class="form-control" id="size1" type="text"/>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="phone">胸圍</label>
+              <input class="form-control" id="size2" type="text"/>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="site">結果</label>
+          <input class="form-control" id="result" type="text" disabled="disabled"/>
+        </div>
+      </section>
+    </div>
+	<p style="padding: 8px; text-align: center; font-size: 12px; color: currentColor;">© 2023 Tornado Shark. All Rights Reserved.</p>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="src/index.js"></script>
+    <script src="src/pics.js"></script>
+  </body>
+</html>
